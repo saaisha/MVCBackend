@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+        
+        
+<hibernate-mapping>
+	<class name="com.saaisha.bean.Sports" table="user">
+		<id name="uid" type="int" column="uid" >
+			<generator class="identity"/>
+		</id>
+		
+		<property name="name" type="string" column="name"/>
+		<property name="events_created" type="int" column="events_created" />
+		<property name="events_attended" type="int" column="events_attended"/>
+		<property name="curr_active_event" type="int" column="curr_active_event" />
+		<property name="no_active_event" type="int" column="no_active_event"/>
+		
+	</class>
+</hibernate-mapping>

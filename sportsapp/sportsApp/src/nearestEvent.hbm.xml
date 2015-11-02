@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+        
+        
+<hibernate-mapping>
+	<class name="com.saaisha.bean.nearestEvent" table="testevent">
+	    <id name="name" column="name" type="string"></id>
+		<property name="lati" type="float" column="lati"/>
+		<property name="longi" type="float" column="longi"/>
+		<property name="distance" type="float" column="distance"/>
+		
+	</class>
+</hibernate-mapping>

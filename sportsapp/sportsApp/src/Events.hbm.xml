@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+        
+        
+<hibernate-mapping>
+	<class name="com.saaisha.bean.Event" table="event">
+		<id name="eid" type="int" column="eid" >
+			<generator class="identity"/>
+		</id>
+		
+		<property name="dateCreated" type="date" column="date_created"/>
+		<property name="date" type="date" column="date"/>
+		<property name="type" type="string" column="type" />
+		<property name="descrip" type="string" column="descrip"/>
+		<property name="locationLat" type="float" column="location_lat" />
+		<property name="locationLong" type="float" column="location_long"/>
+		<property name="reqdPeople" type="int" column="reqd_people"/>
+		<property name="registeredPeople" type="int" column="registered_people"/>
+	</class>
+</hibernate-mapping>
